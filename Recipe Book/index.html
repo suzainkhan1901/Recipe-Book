@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Book</h1>
+        
+        <div class="form-container">
+            <h2>Add a Recipe</h2>
+            <form id="recipeForm">
+                <input type="text" id="recipeName" placeholder="Recipe Name" required>
+                <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+                <textarea id="preparation" placeholder="Preparation Steps" required></textarea>
+                <input type="file" id="image" accept="image/*" required>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search Recipes">
+        </div>
+
+        <h2>All Recipes</h2>
+        <div id="recipeList"></div>
+    </div>
+
+    <footer>
+        <p>Enjoy the Recipe Book</p>
+        <p> Suzain Khan</p>
+        <div class="copyright">Copyright &copy; 2024 All Rights Reserved by <br> <a href="https://t.me/shziiikhan" style="color: #008cff;"> codewithsuzain<br></a></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
